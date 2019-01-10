@@ -58,7 +58,7 @@
         <p>...you may forget to look at a simpler and more important question: “What’s not going to change in the next ten years?”</p>
         <p>Jeff Bezos and Warren Buffett agree on this question being the more important of the two.</p>
     </blockquote>
-    <p><a href="https://fs.blog/2018/11/staying-the-same/">https://fs.blog/2018/11/staying-the-same/</a></p>
+    <p><small><a href="https://fs.blog/2018/11/staying-the-same/">https://fs.blog/2018/11/staying-the-same/</a></small></p>
 </section>
 
 <section>
@@ -71,6 +71,175 @@
         </p>
     </blockquote>
     <p>Nassim Taleb, Antifragile</p>
+</section>
+
+<section>
+    <h2>Lindy Effect</h2>
+    <img src="img/lindy-table.jpg" alt="" style="width: 70%">
+</section>
+
+<section>
+    <h2>Gaussian vs Power Law</h2>
+    <img src="img/gaussian_v_power_law.webp" alt="" style="width: 70%">
+</section>
+
+<section>
+    <h1>Some Technologies</h1>
+</section>
+
+<section>
+    <h2>Python</h2>
+    <ul>
+        <li>Since 1990 - 29 years old</li>
+        <li>Last release 3.7.2, Dec 2018</li>
+        <li>Stack overflow: 38.8% of respondents using it</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Python</h2>
+    <img src="img/python-projection-so2018.png" alt="" style="width: 55%">
+    <p><small><a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">https://stackoverflow.blog/2017/09/06/incredible-growth-python/</a></small></p>
+</section>
+
+<section>
+    <h2>SQL</h2>
+
+    <code><pre>SELECT name, inception, last_release, usage_2018
+FROM technologies
+WHERE name = 'SQL'</pre></code>
+
+    <p>
+        Or with Django ORM:
+    </p>
+
+    <code><pre>Technology.objects.filter(name='SQL')</pre></code>
+</section>
+
+<section>
+    <h2>SQL</h2>
+    <ul>
+        <li>Since 1974 - 45 years old</li>
+        <li>Last release SQL:2016, Dec 2016</li>
+        <li>Stack overflow: 57% of respondents using it</li>
+    </ul>
+</section>
+
+<section>
+    <h2>SQL for Django Developers</h2>
+    <ul>
+        <li><code>queryset.query</code></li>
+        <li><code>django-debug-toolbar</code></li>
+    </ul>
+</section>
+
+<section>
+    <h2>C</h2>
+
+    <code><pre>int factorial(int n) {
+    int result = 1;
+    for (int i = 1; i <= n; ++i)
+        result *= i;
+    return result;
+}</pre></code>
+</section>
+
+<section>
+    <h2>C</h2>
+    <ul>
+        <li>Since 1972 - 47 years old</li>
+        <li>Last release C18, June 2018</li>
+        <li>Stack overflow: 23% of developers using it, 25.4% C++, and 34.4% C#</li>
+    </ul>
+</section>
+
+<section>
+    <h2>C for Python developers</h2>
+    <ul>
+        <li>CPython</li>
+        <li><code>os.fork</code></li>
+    </ul>
+</section>
+
+<section>
+    <h2>HTML</h2>
+
+    <code><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;This is a title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hello world!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre></code>
+</section>
+
+<section>
+    <h2>HTML</h2>
+    <ul>
+        <li>Since 1993 - 26 years old</li>
+        <li>Last release 5.2, December 2017</li>
+        <li>Stack overflow: 68.5%</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Unix timestamps</h2>
+    <p>
+        1546708222<br/>
+        = Saturday, 5 January 2019 17:10:22 UTC
+    </p>
+    <p><a href="https://www.unixtimesta.mp/">https://www.unixtimesta.mp/</a></p>
+</section>
+
+<section>
+    <h2>Unix timestamps</h2>
+    <ul>
+        <li>Since 1971 - 47 years old</li>
+        <li>Will need to change from int32 for Year 2038 bug</li>
+    </ul>
+</section>
+
+<section>
+    <h2>COBOL</h2>
+    <pre><code>IDENTIFICATION DIVISION.
+FUNCTION-ID. factorial.
+
+DATA DIVISION.
+LOCAL-STORAGE SECTION.
+01  i      PIC 9(10).
+
+LINKAGE SECTION.
+01  n      PIC 9(10).
+01  ret    PIC 9(10).
+
+PROCEDURE DIVISION USING BY VALUE n RETURNING ret.
+    MOVE 1 TO ret
+
+    PERFORM VARYING i FROM 2 BY 1 UNTIL n < i
+        MULTIPLY i BY ret
+    END-PERFORM
+
+    GOBACK
+    .</code></pre>
+</section>
+
+<section>
+    <h2>COBOL</h2>
+    <ul>
+        <li>Since 1959 - 60 years ago</li>
+        <li>Last release 2014</li>
+        <li>Stack Overflow: doesn’t appear on list of languages</li>
+    </ul>
+</section>
+
+<section>
+    <h2>COBOL</h2>
+    <ul>
+        <li>In 2006 and 2012, Computerworld surveys found that over 60% of organizations used COBOL</li>
+        <li>1997 estimate: 200 billion lines of COBOL in existence</li>
+    </ul>
 </section>
 
 <section>
